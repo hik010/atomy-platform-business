@@ -1,0 +1,76 @@
+* {
+  font-family: 'Tahoma';
+}
+
+body{
+  margin: 0;
+}
+
+:root {
+  --atomy-color: #00B6F0;
+  --padding-text: 2rem;
+  --margin-content: 5rem;
+}
+
+
+#logo {
+  width: 10%;
+  height: auto;
+  object-fit: cover;
+}
+a {
+  text-decoration: none;
+
+}
+
+.top {
+  background-color: var(--atomy-color);
+  padding: 0.5rem var(--padding-text) ;
+  display: flex;
+  justify-content: end;
+}
+
+.top a {
+  margin: 0.5rem;
+  color: black;
+  background-color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 15px;
+  font-size: small;
+  font-weight: bold;
+
+}
+
+.top a:hover {
+  color: white;
+  border: 1px solid white;
+  background-color:  var(--atomy-color);
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--padding-text)
+  /* margin: 2rem 1rem; */
+}
+
+.nav-links a {
+  color: var(--atomy-color);
+  margin: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: rgb(172, 172, 172)
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 50%;
+}
