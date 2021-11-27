@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
@@ -11,11 +11,20 @@ const NavBar = () => {
         </a>
       </div>
       <div className="bottom">
-        <img id='logo' src="https://upload.wikimedia.org/wikipedia/commons/6/63/%EC%95%A0%ED%84%B0%EB%AF%B8_logo.jpg"></img>
+        <section style={{ display: 'flex', alignItems: 'center' }}>
+          <img
+            id="logo"
+            src="https://logos-download.com/wp-content/uploads/2021/01/Atomy_Logo.png"
+          ></img>
+          <h1 style={{ marginLeft: '10px', fontSize: 'xx-large' }}>
+            Platform Business
+          </h1>
+        </section>
+
         <section className="nav-links">
-          <Link to="/">What</Link>
-          <Link to="/why">Why</Link>
-          <Link to="/how">How</Link>
+          <NavLink to="/" >What</NavLink>
+          <NavLink to="/why" >Why</NavLink>
+          <NavLink to="/how" >How</NavLink>
         </section>
       </div>
     </nav>

@@ -2,16 +2,19 @@
   font-family: 'Tahoma';
 }
 
-body{
+body {
+  margin: 0;
+}
+
+h1 {
   margin: 0;
 }
 
 :root {
-  --atomy-color: #00B6F0;
+  --atomy-color: #00b6f0;
   --padding-text: 2rem;
   --margin-content: 5rem;
 }
-
 
 #logo {
   width: 10%;
@@ -20,12 +23,11 @@ body{
 }
 a {
   text-decoration: none;
-
 }
 
 .top {
   background-color: var(--atomy-color);
-  padding: 0.5rem var(--padding-text) ;
+  padding: 0.5rem var(--padding-text);
   display: flex;
   justify-content: end;
 }
@@ -38,20 +40,23 @@ a {
   border-radius: 15px;
   font-size: small;
   font-weight: bold;
-
 }
 
 .top a:hover {
   color: white;
   border: 1px solid white;
-  background-color:  var(--atomy-color);
+  background-color: var(--atomy-color);
+}
+
+.top a:active {
+  color: black
 }
 
 .bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 var(--padding-text)
+  padding: 1.5rem var(--padding-text);
   /* margin: 2rem 1rem; */
 }
 
@@ -63,7 +68,7 @@ a {
 }
 
 .nav-links a:hover {
-  color: rgb(172, 172, 172)
+  color: rgb(172, 172, 172);
 }
 
 .content-container {
@@ -73,4 +78,13 @@ a {
 
 .content {
   width: 50%;
+
+}
+
+#platform-img {
+  width: 90%;
+}
+
+.content iframe {
+  margin-top: 2rem;
 }
