@@ -38,6 +38,7 @@ a {
   background-color: white;
   padding: 0.3rem 1rem;
   border-radius: 15px;
+  border: 1px solid var(--atomy-color);
   font-size: small;
   font-weight: bold;
 }
@@ -87,4 +88,8 @@ a {
 
 .content iframe {
   margin-top: 2rem;
+}
+
+.content a:hover {
+  color: var(--atomy-color)
 }
